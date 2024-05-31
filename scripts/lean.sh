@@ -1,4 +1,9 @@
 #!/bin/bash
+###
+ # @Author: hwx
+ # @Date: 2024-05-31 23:19:14
+ # @Description: 
+### 
 #=================================================
 # File name: lean.sh
 # System Required: Linux
@@ -19,12 +24,12 @@ rm -rf openwrt-package/verysync
 rm -rf openwrt-package/luci-app-verysync
 
 # Add luci-app-ssr-plus
-git clone --depth=1 https://github.com/fw876/helloworld
+#git clone --depth=1 https://github.com/fw876/helloworld
 
 # Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
 # Add OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash
@@ -42,10 +47,10 @@ git clone https://github.com/DHDAXCW/theme
 git clone --depth=1 https://github.com/gdy666/luci-app-lucky
 
 # alist
-git clone --depth=1 https://github.com/sbwml/luci-app-alist
+#git clone --depth=1 https://github.com/sbwml/luci-app-alist
 
 # Add OpenAppFilter
-git clone --depth=1 https://github.com/destan19/OpenAppFilter
+#git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
 popd
  
@@ -65,4 +70,4 @@ rm -rf nas-packages-luci/luci/luci-app-istorex
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.31.10/g' package/base-files/files/bin/config_generate
